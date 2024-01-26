@@ -1,0 +1,319 @@
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black; /* Change the color to your preference */
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Change the color to your preference */
+    border-radius: 6px;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.container {
+    flex-basis: 50%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    /*scroll-snap-type: y mandatory;*/
+}
+
+section {
+    scroll-snap-align: start;
+    
+    height: 100vh;
+    font-size: 1.4rem;
+
+    position: relative;
+
+    display: flex;
+    flex-flow: column;
+}
+
+
+
+/* SECTION 1 */
+#section1
+{
+    background-image: linear-gradient(to bottom right, #ff7507, #fb01fd);
+
+    justify-content: center;
+    align-items: center;
+}
+
+#backToMenuButton
+{
+    position: absolute;
+
+    margin: 20px;
+
+    width: 180px;
+    height: 40px;
+
+    text-align: center;
+    line-height: 40px;
+
+    color: white;
+
+    top: 0;
+    left: 0;
+
+    cursor: pointer;
+
+    transition: 0.5s font-weight ease;
+}
+
+#backToMenuButton:hover
+{
+    font-weight: bolder;
+}
+
+#section1_div 
+{
+    background: black;
+    width: 400px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+#projects_text
+{
+
+    color: white;
+
+    font-size: 100px;
+
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+#projects_introduction
+{
+    color: white;
+
+    font-weight: lighter;
+}
+
+
+/* Section general styling */
+.projectSection
+{
+    align-items: center;
+
+    text-align: center;
+}
+
+.projectSection h1
+{
+    font-size: 50px;
+
+    letter-spacing: -1.25px;
+
+    margin: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.projectSection_description_div
+{
+    font-weight: 300;
+
+    width: 800px;
+}
+
+.projectSection h3 
+{
+    text-align: left;
+
+    font-size: 22px;
+    letter-spacing: -0.2px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.projectSection h4
+{
+    text-align: left;
+
+    font-weight: bolder;
+    letter-spacing: -1px;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.projectSection p
+{
+    text-align: left;
+
+    font-size: 20px;
+}
+
+.toggleMuteButton
+{
+    position: relative;
+
+    height: 40px;
+
+    color: white;
+
+    border-radius: 5px;
+
+    border: none;
+
+
+    background: linear-gradient(to bottom right, #ff7507, #fb01fd);
+}
+
+.toggleMuteButton:hover
+{
+    background: linear-gradient(to bottom right, #ff8521, #ff54ff);
+}
+
+/* UNREAL SHOOTER SECTION */
+#section_UnrealShooter
+{
+    background: #e3e3e3;
+
+    height: 2950px;
+
+    padding: 20px;
+}
+
+#LocomotionVideo
+{
+    margin-top: 30px;
+    cursor: pointer;
+    height: 450px;
+    width: 800px;
+}
+
+#AnimationsVideo
+{
+    margin-top: 30px;
+    cursor: pointer;
+    height: 450px;
+    width: 800px;
+}
+
+#GameMenuVideo
+{
+    margin-top: 30px;
+    cursor: pointer;
+    height: 450px;
+    width: 800px;
+}
+
+#RetargetingAnimationsVideo
+{
+    margin-top: 30px;
+    cursor: pointer;
+    height: 450px;
+    width: 800px;
+}
+
+
+
+
+
+/* ROCKET LEAGUE BROADCAST MANAGER SECTION */
+#section_RLBM
+{
+    background: #2f2f2f;
+
+    height: 2600px;
+
+    padding: 20px;
+
+    color: white;
+}
+
+#broadcastManagerVideo
+{
+    margin: 30px;
+
+    height: 800px;
+    width: 800px;
+}
+
+
+
+
+
+
+/* GLOBAL */
+.downIconContainer{
+    position: absolute;
+    width: 150px;
+    height: 80px;
+
+    margin:0;
+    padding: 0;
+
+    right: calc(50vw - 100px);
+
+    display: flex;
+    justify-content: center;
+
+    bottom: 0;
+    transition: bottom 0.2s ease;
+
+    cursor: pointer;
+}
+
+.downIconContainer:hover {
+    bottom: 10px;
+}
+
+.downIconContainer p {
+    color: white;
+
+    margin-top: 20px;
+
+    font-size: 20px;
+
+    font-weight: lighter;
+}
+
+.downIcon {
+    position: absolute;
+
+    bottom: 0;
+
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.downIcon span {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background: white;
+    border-radius: 40px;
+}
+
+.downIcon span:nth-child(1) 
+{
+    left: 3px;
+    transform: rotate(25deg);
+}
+
+.downIcon span:nth-child(2)
+{
+    right: 3px;
+    transform: rotate(-25deg);
+}

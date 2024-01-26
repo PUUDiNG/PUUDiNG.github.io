@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/skills.css" />
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+  </head>
+
+  <body>
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/skills.js"></script>
+
+    <div class="container">
+      <section id="section1">
+        <div id="backToMenuButton" onclick="backToMenu()"><< Back To Menu</div>
+
+        <h1>Skills</h1>
+        <p style="color: white">Hover over each skill for more!</p>
+
+        <h2>Programming Languages</h2>
+        <p style="color: white; font-size: 20px">Spaces or Tabs?</p>
+
+        <div id="spacesOrTabs">
+          <button class="randomQuestionButtons" onclick="showSpacesVideo()">Spaces</button>
+          <button class="randomQuestionButtons" onclick="showTabsVideo()">
+            Tabs
+          </button>
+        </div>
+
+        <div id="spacesOrTabsVideo">
+          <button onclick="hideVideo()" class="closeVideo">X</button>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/SsoOG6ZeyUI?si=bTjZeSokJeLNwMmK&amp;start=76"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            allowscriptaccess="always"
+            class="youtubePlayer"
+            id="spacesVideo"
+          ></iframe>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/SsoOG6ZeyUI?si=01rbt1VQBJHt5PUm&amp;start=110"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            allowscriptaccess="always"
+            id="tabsVideo"
+            class="youtubePlayer"
+          ></iframe>
+        </div>
+
+        
+
+        <div class="skill" id="java">
+          <div class="skillsBar">
+            <p class="skillsText">Java</p>
+            <p class="skillsPercent">70%</p>
+            <div class="progressBar programmingLanguageBar" id="javaBar"></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p>
+              This is the language we used at uni in our first year. So I've
+              spent the most time on this language.
+            </p>
+            <br />
+            <p>
+              I gave it a 70% because I think there are definitely things that
+              I'm less familiar with, such as lambda expressions.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill" id="cpp">
+          <div class="skillsBar">
+            <p class="skillsText">C++</p>
+            <p class="skillsPercent">45%</p>
+            <div class="progressBar programmingLanguageBar" id="cppBar"></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p>
+              I recently started learning this through YouTube tutorials in my
+              own time. I'm also quite interested in things like Game Engine
+              programming in C++, and I think that's definitely something I will
+              start learning in the near future.
+            </p>
+            <br />
+            <p>
+              Because of the language's complexity, I rated my proficiency in
+              C++ at 45%. While I can produce code in C++ that matches what I
+              can achieve in Java, I think that there's room for improvement in
+              optimizing my code, especially given the greater control over
+              memory in C++. Learning about compilers in my 3rd uni semester
+              definitely helped a lot in my understanding.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill" id="sql">
+          <div class="skillsBar">
+            <p class="skillsText">SQL</p>
+            <p class="skillsPercent">45%</p>
+            <div class="progressBar programmingLanguageBar" id="sqlBar"></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p class="description">
+              I learnt this from my databases course during my second year at
+              uni. I found it quite useful when I was developing the Rocket
+              League Broadcast Manager when I was using it to pull and push
+              player information from my localhost database.
+            </p>
+            <br />
+            <p>
+              I rated my proficiency in SQL at 45% because while I know the
+              basics, I haven't really used it as much as other languages in my
+              own projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill" id="python">
+          <div class="skillsBar">
+            <p class="skillsText">Python</p>
+            <p class="skillsPercent">40%</p>
+            <div
+              class="progressBar programmingLanguageBar"
+              id="pythonBar"
+            ></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p>
+              I first started learning this language in high school but I never
+              really used it that much since I thought that it was a bit slow
+              for most of my personal projects. I used it a bit more in my
+              second year in my Natural Language Engineering module. Over the
+              next few months I plan on spending more time on this language.
+            </p>
+            <br />
+            <p>
+              I put my skill in Python at a 40% because it's more of a library
+              oriented language and I think that a higher skill rating should
+              mean that I know how to use more libraries.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill" id="javascript">
+          <div class="skillsBar">
+            <p class="skillsText">Javascript</p>
+            <p class="skillsPercent">40%</p>
+            <div
+              class="progressBar programmingLanguageBar"
+              id="javascriptBar"
+            ></div>
+          </div>
+          <div class="descriptionBox">
+            <p>
+              I use this language somewhat often. Mostly just for websites, like
+              THIS ONE!
+            </p>
+            <br />
+            <p>
+              I rate my skill in Javascript at a 40% because I understand the
+              basics but I don't think that I am able to use it for more complex
+              programming yet.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill" id="php">
+          <div class="skillsBar">
+            <p class="skillsText">PHP</p>
+            <p class="skillsPercent">25%</p>
+            <div class="progressBar programmingLanguageBar" id="phpBar"></div>
+          </div>
+          <div class="descriptionBox">
+            <p>
+              I used this language when I was developing my Rocket League
+              Broadcast Manager application, and it was a pretty big part of it
+              as well. However, this is not a language that I can remember how
+              to use straight off the top of my head yet as I find the syntax
+              quite...Interesting. But I am able to use it fine with help from
+              the internet.
+            </p>
+          </div>
+        </div>
+
+        <h2>Other Languages</h2>
+        <div class="skill" id="html">
+          <div class="skillsBar">
+            <p class="skillsText">HTML</p>
+            <p class="skillsPercent">70%</p>
+            <div class="progressBar otherLanguageBar" id="htmlBar"></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p>
+              I learnt this in high school for a school project - A revision
+              website for International Baccalaureate Economics students. I also
+              HTML to make this website. So I guess you can judge my skill level
+              by how this website looks :D
+            </p>
+          </div>
+        </div>
+
+        <div class="skill" id="css">
+          <div class="skillsBar">
+            <p class="skillsText">CSS</p>
+            <p class="skillsPercent">70%</p>
+            <div class="progressBar otherLanguageBar" id="cssBar"></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p>Same as HTML ↑</p>
+          </div>
+        </div>
+
+        <h2>Tools</h2>
+        <div class="skill" id="unreal">
+          <div class="skillsBar">
+            <p class="skillsText">Unreal Engine 5</p>
+            <p class="skillsPercent">40%</p>
+            <div class="progressBar toolsBar" id="unrealBar"></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p>
+              I don't do the Computing with Digital Media course at my uni, but
+              game development was always something I wanted to do. So I learnt
+              how to use this through online courses on YouTube and Udemy. I am
+              able to do basic Blueprint and C++ programming in UE5. You can
+              check out my
+              <a href="../pages/projects.html"  target="_blank">FPS Multiplayer Project</a>.
+            </p>
+            <br />
+            <p>
+              I gave this a 40% because I think that there's a lot of things
+              that I still need to learn in Unreal Engine. E.g. Game engine
+              Modificiations, procedural generation, world partitioning, game
+              optimization etc.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill" id="visualstudio">
+          <div class="skillsBar">
+            <p class="skillsText">Visual Studio</p>
+            <p class="skillsPercent">20%</p>
+            <div class="progressBar toolsBar" id="visualstudioBar"></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p>
+              I know how to use it as a tool to write C++ code for Unreal Engine
+              projects, however, I definitely do not know the ins and outs of
+              the IDE.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill" id="blender">
+          <div class="skillsBar">
+            <p class="skillsText">Blender</p>
+            <p class="skillsPercent">40%</p>
+            <div class="progressBar toolsBar" id="blenderBar"></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p>
+              I first learnt how to use Blender during the pandemic. And I made
+              a donut, probably like everyone else. I know how to model basic
+              objects in hard surface modelling, but have a bit of a hard time
+              with complex smooth round surfaces and good topology. I also know
+              the basics of how Normals and UVs work which helped me with my
+              learning in Unreal. I'm not that proficient at using nodes in
+              Blender yet but it is a skill I'd like to get better at in the
+              future. Especially geometry nodes for procedural generation.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill" id="flstudio">
+          <div class="skillsBar">
+            <p class="skillsText">FL Studio</p>
+            <p class="skillsPercent">85%</p>
+            <div class="progressBar toolsBar" id="flstudioBar"></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p>
+              I started learning how to produce music in 2018 and have been
+              doing it consistently since. I would say that I'm quite familiar
+              with FL Studio but to really push that 90% mark, I need to
+              understand the more technical aspects such as creating complex
+              sounds completely from scratch.
+            </p>
+            <br />
+            <p>
+              Although not really part of FL Studio, I don't have any analog
+              equipment so have never used any for music production.
+            </p>
+          </div>
+        </div>
+
+        <h2>Other Skills</h2>
+        <div class="skill" id="git">
+          <div class="skillsBar">
+            <p class="skillsText">Git</p>
+            <p class="skillsPercent">20%</p>
+            <div class="progressBar otherSkillsBar" id="gitBar"></div>
+          </div>
+
+          <div class="descriptionBox">
+            <p>
+              I know the basics of Git. Such as using GitHub desktop, using
+              command line to add and commit changes as well as how to revert
+              and reset. This has honestly saved my so many times when I was
+              developing my
+              <a href="../pages/projects.html" target="_blank">FPS Multiplayer Project</a>
+              so I'm really glad that I know at least the basics.
+            </p>
+            <br />
+            <p>
+              However, I'm pretty sure that I've only scratched the surface so
+              I'll put my skill level at a 20%.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+  </body>
+</html>

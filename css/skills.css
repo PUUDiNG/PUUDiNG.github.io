@@ -1,0 +1,718 @@
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black; /* Change the color to your preference */
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Change the color to your preference */
+    border-radius: 6px;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.container {
+    flex-basis: 50%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    /*scroll-snap-type: y mandatory;*/
+}
+
+section {
+    scroll-snap-align: start;
+    
+    height: 100vh;
+    font-size: 1.4rem;
+
+    position: relative;
+
+    display: flex;
+    flex-flow: column;
+}
+
+
+
+/* SECTION 1 */
+#section1
+{
+    background-image: linear-gradient(to bottom right, #ff7507, #fb01fd);
+
+    align-items: center;
+
+    height: 1500px;
+}
+
+#backToMenuButton
+{
+    position: absolute;
+
+    margin: 20px;
+
+    width: 180px;
+    height: 40px;
+
+    text-align: center;
+    line-height: 40px;
+
+    color: white;
+
+    top: 0;
+    left: 0;
+
+    cursor: pointer;
+
+    transition: 0.5s font-weight ease;
+}
+
+#backToMenuButton:hover
+{
+    font-weight: bolder;
+}
+
+#section1_div 
+{
+    background: black;
+    width: 400px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+h1
+{
+    color: white;
+
+    font-size: 100px;
+
+    letter-spacing: -4px;
+
+    margin-top: 50px;
+}
+
+
+h2
+{
+    color: white;
+
+    letter-spacing: -0.5px;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.skill
+{
+    background: black;
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    border-radius: 20px;
+
+    height: 40px;
+    width: 600px;
+
+    
+    margin-top: 10px;
+
+    transition: height 0.5s ease;
+
+    overflow: hidden;
+
+    pointer-events: none;
+}
+
+.skillsBar
+{
+    background: black;
+
+    position: relative;
+
+    line-height: 45px;
+
+    height: 40px;
+    width: 600px;
+
+    border-radius: 20px;
+
+    z-index: 3;
+
+    pointer-events: auto;
+}
+
+div.skill:hover {
+    height: 200px;
+
+    background: black;
+    opacity: 100%;
+}
+
+
+.skillsText
+{
+    position: relative;
+
+    color: white;
+
+    margin-left: 10px;
+
+    z-index: 2;
+}
+
+.skillsPercent
+{
+    position: absolute;
+
+    color: white;
+
+    top: 0;
+
+    z-index: 2;
+
+    right: 10px;
+}
+
+.progressBar 
+{
+    position: relative;
+
+    bottom: 45px;
+
+    height: 40px;
+
+    width: 300px;
+
+    background: grey;
+
+    border-radius: 20px;
+    
+    opacity: 0;
+}
+
+.descriptionBox
+{
+    position: relative;
+
+    background: white;
+
+    bottom: 40px;
+
+
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    height: 200px;
+
+    border-radius: 20px;
+}
+
+.descriptionBox p
+{
+    font-size: 20px;
+}
+
+
+
+/* PROGRAMMING LANGUAGES */
+.programmingLanguageBar
+{
+    background: rgb(89, 0, 255);
+}
+
+#java
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 0s;
+}
+div#java:hover {
+    height: 170px;
+
+    background: black;
+    opacity: 100%;
+}
+#javaBar
+{
+    width: 0;
+    animation: Java 0.5s forwards ease 0.4s;
+}
+@keyframes Java
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((70/100)*600px);
+    }
+}
+
+
+
+#cpp
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 0.2s;
+}
+div#cpp:hover {
+    height: 295px;
+
+    background: black;
+    opacity: 100%;
+}
+#cppBar
+{
+    width: 0;
+    animation: Cpp 0.5s forwards ease 0.6s;
+}
+@keyframes Cpp
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((45/100)*600px);
+    }
+}
+
+#sql
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 0.4s;
+}
+div#sql:hover {
+    height: 230px;
+
+    background: black;
+    opacity: 100%;
+}
+#sqlBar
+{
+    width: 0;
+    animation: Sql 0.5s forwards ease 0.8s;
+}
+@keyframes Sql
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((45/100)*600px);
+    }
+}
+
+
+#python
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 0.6s;
+}
+div#python:hover {
+    height: 245px;
+
+    background: black;
+    opacity: 100%;
+}
+#pythonBar
+{
+    width: 0;
+    animation: Python 0.5s forwards ease 1s;
+}
+@keyframes Python
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((40/100)*600px);
+    }
+}
+
+#javascript
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 0.8s;
+}
+div#javascript:hover {
+    height: 190px;
+
+    background: black;
+    opacity: 100%;
+}
+#javascriptBar
+{
+    width: 0;
+    animation: Javascript 0.5s forwards ease 1.2s;
+}
+@keyframes Javascript
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((40/100)*600px);
+    }
+}
+
+
+#php
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 1s;
+}
+div#php:hover {
+    height: 190px;
+
+    background: black;
+    opacity: 100%;
+}
+#phpBar
+{
+    width: 0;
+    animation: php 0.5s forwards ease 1.4s;
+}
+@keyframes php
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((25/100)*600px);
+    }
+}
+
+
+
+/* OTHER LANGUAGES */
+.otherLanguageBar
+{
+    background: rgb(111, 0, 255);
+}
+div#html:hover {
+    height: 150px;
+
+    background: black;
+    opacity: 100%;
+}
+#html
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 1.2s;
+}
+#htmlBar
+{
+    width: 0;
+    animation: html 0.5s forwards ease 1.6s;
+}
+@keyframes html
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((70/100)*600px);
+    }
+}
+
+
+
+#css
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 1.4s;
+}
+div#css:hover {
+    height: 110px;
+
+    background: black;
+    opacity: 100%;
+}
+#cssBar
+{
+    width: 0;
+    animation: css 0.5s forwards ease 1.8s;
+}
+@keyframes css
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((70/100)*600px);
+    }
+}
+
+
+
+
+/* TOOLS */
+.toolsBar
+{
+    background: rgb(119, 0, 255);
+}
+
+#unreal
+{
+    pointer-events: all;
+    animation: SkillsBarFadeIn 0.5s forwards ease 1.6s;
+}
+div#unreal:hover {
+    height: 280px;
+
+    background: black;
+    opacity: 100%;
+}
+#unrealBar
+{
+    width: 0;
+    animation: unreal 0.5s forwards ease 2s;
+}
+@keyframes unreal
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((40/100)*600px);
+    }
+}
+
+
+#visualstudio
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 1.8s;
+}
+div#visualstudio:hover {
+    height: 130px;
+
+    background: black;
+    opacity: 100%;
+}
+#visualstudioBar
+{
+    width: 0;
+    animation: visualstudio 0.5s forwards ease 2.2s;
+}
+@keyframes visualstudio
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((20/100)*600px);
+    }
+}
+
+
+
+
+
+#blender
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 1.8s;
+}
+div#blender:hover {
+    height: 230px;
+
+    background: black;
+    opacity: 100%;
+}
+#blenderBar
+{
+    width: 0;
+    animation: blender 0.5s forwards ease 2.2s;
+}
+@keyframes blender
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((40/100)*600px);
+    }
+}
+
+
+
+#flstudio
+{
+    animation: SkillsBarFadeIn 0.5s forwards ease 2s;
+}
+div#flstudio:hover {
+    height: 225px;
+
+    background: black;
+    opacity: 100%;
+}
+#flstudioBar
+{
+    width: 0;
+    animation: flstudio 0.5s forwards ease 2.4s;
+}
+@keyframes flstudio
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((85/100)*600px);
+    }
+}
+
+
+
+
+/* OTHER SKILLS */
+.otherSkillsBar
+{
+    background: rgb(153, 0, 255);
+}
+
+#git
+{
+    pointer-events: all;
+    animation: SkillsBarFadeIn 0.5s forwards ease 2.2s;
+}
+div#git:hover {
+    height: 225px;
+
+    background: black;
+    opacity: 100%;
+}
+#gitBar
+{
+    width: 0;
+    animation: git 0.5s forwards ease 2.6s;
+}
+@keyframes git
+{
+    from {
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: calc((20/100)*600px);
+    }
+}
+
+
+
+
+@keyframes SkillsBarFadeIn
+{
+    0% {
+        visibility: hidden;
+        opacity: 0%;
+    }
+    1% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+
+#spacesOrTabs
+{
+
+}
+
+
+
+#spacesOrTabs button
+{
+    margin: 10px 0px 15px 0px;
+    height: 30px;
+
+    width: 80px;
+
+    border-radius: 5px;
+
+    border: none;
+
+    color: black;
+
+    transition: background 0.2s ease;
+
+    cursor: pointer;
+}
+
+#spacesOrTabs button:hover
+{
+    color: white;
+    background: black;
+}
+
+
+
+
+
+#spacesOrTabsVideo
+{
+    position: absolute;
+    background: white;
+
+    visibility: collapse;
+
+    width: 700px;
+
+    height: 400px;
+
+    z-index: 4;
+
+    top: calc(50vh - 200px);
+}
+
+#spacesOrTabsVideo button
+{
+    font-size: 40px;
+    position: absolute;
+
+    margin: 10px;
+
+    right: 0px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+#spacesVideo
+{
+    position: absolute;
+
+
+    left: calc(700px/2 - 280px);
+    top: calc(400px/2 - 157px);
+
+    visibility: hidden;
+}
+
+#tabsVideo
+{
+    position: absolute;
+
+
+    left: calc(700px/2 - 280px);
+    top: calc(400px/2 - 157px);
+
+    visibility: hidden;
+}

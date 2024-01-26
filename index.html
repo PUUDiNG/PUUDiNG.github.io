@@ -1,191 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Rocket League Decals</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="/images/sussex sharks.png">
-    </head>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan's Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+    
+</head>
 
-    <body>
+<body>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/main.js"></script>
+
+    <header>
         
-        <div class="landingDiv">
-            
-            <div class="landingText">
-                <img src="images/white logo.jpg" class="sussexLogo" width="100px">
-                <h1>DOWNLOAD THE DECALS</h1>
-                <a href="#decalDownload">Sussex Sharks Decals</a>
+        <!-- Add navigation or other header content here -->
+    </header>
+
+    
+    <div class="container" id="container">
+
+        
+        <section id="section1">
+            <div id="hi_div">
+                <h1 id="hi_text">Hi!</h1>
+                <div id="introduce_text_div">
+                    <h2 id="introduce_text">My name is Ethan and I'm a computer science student!</h2>
+                    <p id="check_out_text">Check out my projects below :)</p>
+                </div>
+                
+                
+            </div>
+
+            <div id="section1-downIconContainer" class="downIconContainer" onclick="goToSection2()">
+                <p>main menu</p>
+                <div id="section1-downIcon" class="downIcon">
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
             
-            <div class="octaneImage"></div>
-        </div>
+            
+        </section>
+        <section id="section2">
+            <h1 id="mainMenu_text">Main Menu</h1>
 
-        <div id="decalDownload">
-            <h2>Fennec Collection</h2>
-            <table>
-                <tr>
-                    <td>
-                        <div class="showcaseBox">
-                            <div class="imageContainer">
-                                <img src="images/sets/noGlossBlackHome.png" class="showcaseImage1">
-                                <img src="images/sets/noGlossWhiteHome.png" class="showcaseImage2">
-                            </div>
-                            
-                            <p class="description">Home and Away Decal Set: No Gloss</p>
-                            <a class="downloadButton" href="decalFiles/Fennec Sussex Sharks No Gloss.zip" download>Download</a>
-                        </div>
-                    </td>
+            <div class="menuSelection" onclick="goToProjects()">
+                <h2>Projects</h2>
+            </div>
+            <div class="menuSelection" onclick="goToSkills()">
+                <h2>Skills</h2>
+            </div>
+            <div class="menuSelection" onclick="goToAbout()">
+                <h2>About</h2>
+            </div>
+            <div class="menuSelection" onclick="goToContact()">
+                <h2>Contact</h2>
+            </div>
 
-                    <td>
-                        <div class="showcaseBox">
-                            <div class="imageContainer">
-                                <img src="images/sets/fullGlossBlackAway.png" class="showcaseImage1">
-                                <img src="images/sets/fullGlossWhiteHome.png" class="showcaseImage2">
-                            </div>
-                            
-                            <p class="description">Home and Away Decal Set: Full Gloss</p>
-                            <a class="downloadButton" href="decalFiles/Fennec Sussex Sharks Full Gloss.zip" download>Download</a>
-                        </div>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td>
-                        <div class="showcaseBox">
-                            <div class="imageContainer">
-                                <img src="images/sets/glossyColorsWhiteAway.png" class="showcaseImage1">
-                                <img src="images/sets/glossyColorsBlackHome.png" class="showcaseImage2">
-                            </div>
-                            
-                            <p class="description">Home and Away Decal Set: Glossy Patterns</p>
-                            <a class="downloadButton" href="decalFiles/Fennec Sussex Sharks Glossy Colors.zip" download>Download</a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="showcaseBox">
-                            <div class="imageContainer">
-                                <img src="images/sets/underpaintGlossWhiteHome.png" class="showcaseImage1">
-                                <img src="images/sets/underpaintGlossWhiteAway.png" class="showcaseImage2">
-                            </div>
-                            
-                            <p class="description">Home and Away Decal Set: Glossy Underpaint</p>
-                            <a class="downloadButton" href="decalFiles/Fennec Sussex Sharks Glossy Underpaint.zip" download>Download</a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        </section>
 
-        <div class="downloadInstructions">
-            <h2>Download Instructions</h2>
-            <table>
-                <tr>
-                    <td>Step 1: Download the alphaconsole plugin for bakkesmod. <a href="https://bakkesplugins.com/plugins/view/108" target="_blank">Click to go to download page</a></td>
-                </tr>
-                <tr>
-                    <td><img src="images/download alphaconsole.png" width="500px"></td>
-                </tr>
-                <tr><td>Step 2: Click "Open plugininstaller.exe"</td></tr>
-                <tr>
-                    <td>
-                        <img src="images/download alphaconsole 2.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Step 3: Once the mod has downloaded, make sure the alphaconsole plugin is activated by checking the box.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="images/alphaconsole tick.png" width="800px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Step 4: Download the decal zip file you want above</td>
-                </tr>
-                <tr>
-                    <td>Step 5: Open bakkesmod and go to "File" and click "Open Bakkesmod Folder"</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="images/bakkesmod.png">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Step 6: In the bakkesmod folder, go to "data > acplugin > DecalTextures" and paste the zip file there</td>
-                </tr>
-                <tr>
-                    <td>Step 7: Extract the file in "DecalTextures". The target file directory should look something like this</td>
-                </tr>
-                <tr>
-                    <td><img src="images/extract.png"></td>
-                </tr>
-                <tr>
-                    <td>
-                        Step 8: To apply the decal, go in game and pick a car (the car the decal is made for) with no decal on it and press F5 to open the alphaconsole and simple choose the decal you want
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="images/apply decal.png" width="800px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td class="downloadWarning">IF YOU WANT TO USE DECALS WITH GLOSS YOU NEED THE MOIST ESPORTS 2022 HOME FENNEC (skinID: 8077)</td>
-                </tr>
-                <tr>
-                    <td class="downloadWarning">If you don't have the Moist Esports Fennec, you NEED an ESPORTS DECAL with AT LEAST some anodized or glossy parts on it</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>Step 9: Open the bakkesmod console by pressing F6, and type in "acplugin_texturedeveloper_enabled 1"</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="images/texturedeveloper.png">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Step 10: Equip an esports decal that has some glossy or anodized parts and open alphaconsole again by pressing F5</td>
-                </tr>
-                <tr>
-                    <td>Step 11: Find the Decal ID in the alphaconsole for the decal you have equipped. Here I have a Karmine Corp Fennec with Decal ID 8371.</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="images/skinid.png" width="1200">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Step 12: Go back to the folder containing the decals (from Step 7) and open the file named "_TexturesPackage.json" and right click on the file.</td>
-                </tr>
-                <tr>
-                    <td>Step 13: Click "Open with" and choose "Notepad". If you can't see the notepad option, click choose another app and the option should appear.</td>
-                </tr>
-                <tr>
-                    <td>Step 14: Change the skinID value (originally 8077) to the Decal ID of the esports decal you have equipped. DO NOT remove any commas as it will break the json syntax and it will not work</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="images/edit json.png">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Step 15: Restart the game and make sure that you have your esports decal (that has the same Decal ID as the number you have entered into the json file) and simply equip a glossy version of the decal in the alphaconsole.</td>
-                </tr>
-                <tr>
-                    <td>Custom decals with no gloss - Only works with cars with no decal on it</td>
-                </tr>
-                <tr>
-                    <td>Glossy custom decals - Only works with cars with a Decal ID that match the skinID in the json file</td>
-                </tr>
-            </table>
-        </div>
-    </body>
+        <!-- Add more sections or content as needed -->
+
+        
+    </div>
+
+
+    <script>
+        window.addEventListener("scroll", function () {
+            console.log("hi");
+        }, false);
+    </script>
+</body>
 
 </html>

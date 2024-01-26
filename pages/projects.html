@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+  </head>
+
+  <body>
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/projects.js"></script>
+
+    <div class="container">
+      <section id="section1">
+        <div id="backToMenuButton" onclick="backToMenu()"><< Back To Menu</div>
+
+        <div id="section1_div">
+          <h1 id="projects_text">Projects</h1>
+          <p id="projects_introduction">
+            A list of all the projects I'm working on.
+          </p>
+          <div
+            id="section1-downIconContainer"
+            class="downIconContainer"
+            onclick="goToSection2()"
+          >
+            <p>check them out</p>
+            <div id="section1-downIcon" class="downIcon">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section_UnrealShooter" class="projectSection">
+        <h1 id="section_UnrealShooter_title">
+          Unreal Engine Multiplayer FPS Project
+        </h1>
+
+        <div class="projectSection_description_div">
+          <p>
+            This is a project that I started in 2024 when I wanted to build a
+            game inspired by the Battlefield series by Electronic Arts. Going
+            into this, I knew that it would be quite challenging as I had never
+            tried implementing replication in C++ before.
+          </p>
+
+          <h3>Locomotion and Interaction Replication</h3>
+
+          <p>
+            I managed to successfully implement replicated locomotion in the
+            game. Although there are still quite a lot of things I need to
+            polish off. I also managed to replicate interaction with objects
+            such as doors. However, I found a bug where if you keep spamming
+            interact, the replication will (although not very often) get out of
+            sync. Unfortunately, that is an issue I do not yet know how to fix.
+            Further down development, I will probably add a proning system in
+            the game as well. I got most of my animations through the Unreal
+            sample projects and mixamo.
+          </p>
+
+          <br />
+
+          <button class="toggleMuteButton" onclick="muteVideo(LocomotionVideo)">
+            Click for sound
+          </button>
+
+          <video autoplay loop muted id="LocomotionVideo">
+            <source
+              src="../videos/locomotionReplication.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <h3>Creating Assets</h3>
+
+          <p>
+            Due to the lack of assets. Mostly because I couldn't find any on the
+            web. I had to create some first person shooter animations for my
+            game. I used the Unreal Engine 4 Mannequin Skeleton Control Rig to
+            make these animations as the first person arms thankfully shared the
+            same skeleton. I made some pistol idle, firing, and walking
+            animations, but there are sitll a lot more animations I need to
+            make. I also want to implement some 2 player animations further down
+            the line, like stabbing animations.
+          </p>
+
+          <video autoplay loop muted id="AnimationsVideo">
+            <source src="../videos/makingAnimations.mp4" type="video/mp4" />
+          </video>
+
+          <h3>Menu System</h3>
+
+          <p>
+            I also created a simple game menu system using blueprints and UMG.
+            The keybinds page allows you to change the keybindings using the
+            Input Key Selector. I used Unreal Engine 5's Enhanced Input
+            Subsystem for this project since the old Input Mapping system is
+            deprecated. For the graphics section, I made a macro that utilizes
+            some other custom functions to make my life easier when linking up
+            all the nodes with the button events.
+          </p>
+
+          <br />
+
+          <button class="toggleMuteButton" onclick="muteVideo(GameMenuVideo)">
+            Click for sound
+          </button>
+
+          <video autoplay loop muted id="GameMenuVideo">
+            <source src="../videos/gameMenuVideo.mp4" type="video/mp4" />
+          </video>
+
+          <h3>Also this happened when I was retargeting animations</h3>
+
+          <br />
+
+          <button
+            class="toggleMuteButton"
+            onclick="muteVideo(RetargetingAnimationsVideo)"
+          >
+            Click for sound
+          </button>
+
+          <video autoplay loop muted id="RetargetingAnimationsVideo">
+            <source
+              src="../videos/retargetingAnimations.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </section>
+
+      <section id="section_RLBM" class="projectSection">
+        <h1 id="section_RLBM_title">Rocket League Broadcast Manager</h1>
+
+        <div class="projectSection_description_div">
+          <p>
+            Rocket League Broadcast Manager is an evolving project aimed at
+            simplifying and enhancing the broadcasting process for Rocket League
+            esports matches. Crafted with a focus on practicality and
+            efficiency, this tool caters to the needs of tournament organizers
+            and broadcasters alike.
+          </p>
+
+          <h3>Intuitive Match Broadcasting</h3>
+
+          <p>
+            The application provides an easy-to-use interface for managing and
+            broadcasting Rocket League events, ensuring a straightforward
+            experience for users involved in esports broadcasting.
+          </p>
+
+          <h3>Structured Database Management</h3>
+
+          <p>
+            At its core, the project employs a well-organized database powered
+            by Apache and MySQL. This database efficiently stores information
+            about teams, matchups, and players, facilitating quick retrieval
+            during broadcasts.
+          </p>
+
+          <h3>Real-Time Broadcast Overlays</h3>
+
+          <p>
+            A notable feature is the capability to generate real-time broadcast
+            overlays. By pulling live data from the database, the application
+            seamlessly integrates information into the overlay, offering viewers
+            up-to-the-minute details on teams, matchups, and player statistics.
+            As well as extra screens like a waiting screen showing match details
+            and previews. Here is the overlay in action for the 2023 Sussex vs 
+            Brighton Varsity event with me casting the match :D
+          </p>
+          <br>
+          <p>
+            The series score is a little bugged though, or could be a human input
+            error :(
+          </p>
+          <br>
+          
+          <iframe
+            width="800"
+            height="450"
+            src="https://www.youtube.com/embed/_lxrAk-mANE?si=PEc3rcQpg7iUu5OK"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <br/>
+
+
+
+          <h3>Statistical Tracking for Teams and Players</h3>
+
+          <p>
+            Beyond basic broadcasting, the application includes a statistics
+            tracking system. It maintains a record of team and player
+            performance across multiple broadcasted games, providing valuable
+            insights into trends and achievements.
+          </p>
+
+          <h3>Instant Replays</h3>
+
+          <p>
+            Another feature I am planning to implement is instant replay.
+            Electron can be used to capture audio and video from the computer.
+            This means the program can stitch replays together, allowing users
+            to play a highlight reel at the end of matches.
+          </p>
+
+          <h3>Technology Stack</h3>
+          <h4>Backend</h4>
+
+          <p>
+            Utilizes Apache and MySQL for robust and secure database management.
+          </p>
+
+          <h4>Frontend</h4>
+
+          <p>
+            Developed using HTML, PHP, CSS, and JavaScript to ensure a
+            responsive and visually appealing user interface.
+          </p>
+
+          <h4>Application Framework</h4>
+
+          <p>
+            Powered by Electron, offering a cross-platform desktop application
+            for accessibility.
+          </p>
+        </div>
+
+        <video autoplay loop muted id="broadcastManagerVideo">
+          <source
+            src="../videos/rocketLeagueBroadcastManagerDemo.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+
+
+      <section class="projectSection">
+        <h1>Rocket League Decals</h1>
+
+        <p>Some decals I made for the Uni Rocket League eSports tean</p>
+        <a href="../rocketleaguedecals/index.html" target="_blank">link to decals website</a>
+
+        <img src="../images/rocketleaguedecals.png" style="filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5)); margin: 50px; height: 1000px">
+
+      </section>
+    </div>
+  </body>
+</html>
