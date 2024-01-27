@@ -182,7 +182,7 @@ section {
 
 .menuSelection:hover {
     height: 300px;
-    background-color: rgba(254,88,88,1);
+    background-color: rgb(255, 104, 104);
 }
 
 
